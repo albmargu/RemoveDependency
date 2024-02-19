@@ -8,9 +8,6 @@ namespace Example2
 {
     public class WrapperStaticDependency : IWrapperStaticDependency
     {
-        public string GetDBName()
-        {
-            return "MyDatabase.db";
-        }
+        public string GetDBName() => StaticDependency.GetDBName();
     }
 }
